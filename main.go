@@ -5,7 +5,10 @@ import (
 	"net/http"
 )
 
+//main.go
 type InMemoryPlayerStore struct{}
+
+func (i *InMemoryPlayerStore) RecordWin(name string) {}
 
 func (i *InMemoryPlayerStore) GetPlayerScore(name string) int {
 	return 123
